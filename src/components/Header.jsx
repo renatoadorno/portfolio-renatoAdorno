@@ -9,8 +9,6 @@ import { PaperAirplaneIcon } from '@heroicons/react/outline'
 import { ViewGridIcon } from '@heroicons/react/outline'
 import { XIcon } from '@heroicons/react/outline'
 
-import '../App.css';
-
 //definir um stado com valor buleano qua ao apertar adiciona a classe show-menu linha 25
 
 export default function Header() {
@@ -27,7 +25,7 @@ export default function Header() {
   return (
     <header className="header" id="header">
       <nav className="nav container">
-        <a href="#" className="nav__logo">
+        <a href="#home" className="nav__logo">
           Renato Adorno
         </a>
 
