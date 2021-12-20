@@ -356,7 +356,7 @@ export default function Skills() {
                 <span className="skills__subtitle">+1 ano de experiencia</span>
               </div>
 
-              <FiChevronDown className="skills__arrow" />
+              <FiChevronDown onClick={ toggleThree } className="skills__arrow" />
             </div>
 
             <div className="skills__list grid">
@@ -419,7 +419,7 @@ export default function Skills() {
                 <span className="skills__subtitle">+1 ano de experiencia</span>
               </div>
 
-              <FiChevronDown className="skills__arrow" />
+              <FiChevronDown onClick={ toggleThree } className="skills__arrow" />
             </div>
 
             <div className="skills__list grid">
