@@ -4,6 +4,7 @@ import Home from './components/Home';
 import About from './components/About';
 import Skills from './components/Skills'
 import Qualification from './components/Qualification';
+import Services from './components/Services';
 import './App.css';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <About />
       <Skills />
       <Qualification />
+      <Services />
       <Header />
     </div>
   );
