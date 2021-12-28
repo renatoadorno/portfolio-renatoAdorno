@@ -5,7 +5,8 @@ import { FiGithub } from "react-icons/fi";
 import { FiLinkedin } from "react-icons/fi";
 import { BsMouse } from "react-icons/bs";
 import { BsArrowDownShort } from "react-icons/bs";
-import { HiOutlinePaperAirplane } from "react-icons/hi";
+// import { HiOutlinePaperAirplane } from "react-icons/hi";
+import { BiSend } from "react-icons/bi";
 
 import '../css/index.css'
 
@@ -42,7 +43,7 @@ export default function Home() {
             <h3 className="home__subtitle">Frontend Developer</h3>
             <p className="home__description">Nada por enquanto</p>
             <a href="#contact" className="button button--flex">
-              Entre em contato <HiOutlinePaperAirplane className="button__icon"/>
+              Entre em contato <BiSend className="button__icon"/>
             </a>
           </div>
         </div>

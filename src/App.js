@@ -6,19 +6,23 @@ import Skills from './components/Skills'
 import Qualification from './components/Qualification';
 import Services from './components/Services';
 import Portfolio from './components/portfolio/Portfolio';
+import Contact from './components/Contact';
 import './css/index.css';
 
 function App() {
   return (
-    <div className=''>
-      <Home />
-      <About />
-      <Skills />
-      <Qualification />
-      <Services />
-      <Portfolio />
+    <>
       <Header />
-    </div>
+      <main>
+        <Home />
+        <About />
+        <Skills />
+        <Qualification />
+        <Services />
+        <Portfolio />
+        <Contact />
+      </main>
+    </>
   );
 }
 
