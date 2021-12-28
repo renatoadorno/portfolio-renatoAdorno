@@ -5,6 +5,8 @@ import { CheckCircleIcon } from '@heroicons/react/outline'
 import { CodeIcon } from '@heroicons/react/outline'
 import { TemplateIcon } from '@heroicons/react/outline'
 
+import '../css/index.css'
+
 export default function Services() {
   const [servicesOne, setServicesOne] = useState(false);
   const [servicesTwo, setServicesTwo] = useState(false);
@@ -20,7 +22,7 @@ export default function Services() {
   }
 
   return (
-    <section className="services section" id="sevices">
+    <section className="services section" id="services">
       <h2 className="section__title">Seviços</h2>
       <span className="section__subtitle">O que eu ofereço</span>
 

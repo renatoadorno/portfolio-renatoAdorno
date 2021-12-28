@@ -1,23 +1,25 @@
 /*======================== GOOGLE FONTES =====================================*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
-
 /*======================== VARIAVEIS =========================================*/
 :root {
   --header-height: 3rem;
 
   /*==========Colors===========*/
-  --hue-color: 57; /* Green 142 - Blue 230*/
+  --hue-color: 80; /* Green 142 - Blue 230*/
 
   /*==========Hsl Colors===========*/
-  --first-color: hsl(var(--hue-color), 69%, 61%);
+  --first-color: hsl(var(--hue-color), 69%, 50%);
+  --second-color: hsl(var(--hue-color), 1%, 26%);
   --first-color-second: hsl(var(--hue-color), 69%, 61%);
   --first-color-alt: hsl(var(--hue-color), 57%, 53%);
+  --second-color-alt: hsl(var(--hue-color), 23%, 38%);
   --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
   --title-color: hsl(var(--hue-color), 8%, 15%);
   --text-color: hsl(var(--hue-color), 8%, 45%);
   --text-color-light: hsl(var(--hue-color), 8%, 65%);
   --input-color: hsl(var(--hue-color), 70%, 96%);
   --body-color: hsl(var(--hue-color), 60%, 99%);
+  --swiper-theme-color: hsl(var(--hue-color), 69%, 61%);
   --container-color: #FFF;
 
   /*==========Font e Tipografia===========*/
@@ -28,9 +30,9 @@
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1.125rem;
-  --normal-font-size: .398rem;
+  --normal-font-size: .938rem;
   --small-font-size: .813rem;
-  --smaller-font-size: 75rem;
+  --smaller-font-size: .75rem;
 
   /*==========Font Weight===========*/
   --font-medium: 500;
@@ -62,7 +64,7 @@
     --h3-font-size: 1.25rem;
     --normal-font-size: 1rem;
     --small-font-size: .875rem;
-    --smaller-font-size: 813rem;
+    --smaller-font-size: .813rem;
   }
 }
 
@@ -123,18 +125,18 @@ button {
   padding: 2rem 0 4rem;
 }
 
-.section_title {
+.section__title {
   font-size: var(--h1-font-size)
 }
 
-.section_subtitle {
+.section__subtitle {
   display: block;
   font-size: var(--small-font-size);
-  margin-bottom: var(--mb-3);
+  margin-bottom: var(--mb-2-5);
 }
 
-.section_title,
-.section_subtitle {
+.section__title,
+.section__subtitle {
   text-align: center;
 }
 
@@ -172,6 +174,7 @@ button {
 .nav__toggle {
   color: var(--title-color);
   font-weight: var(--font-medium);
+  font-size: var(--normal-font-size);
 }
 
 .nav__logo:hover {
@@ -188,10 +191,6 @@ button {
 }
 
 @media screen and (max-width: 767px) {
-  .nav__logo {
-    font-size: 12px;
-  }
-
   .nav__menu {
     position: fixed;
     bottom: -100%;
@@ -257,7 +256,7 @@ button {
 
 .home__content {
   grid-template-columns: .5fr 3fr;
-  padding-top: 3.5rem;
+  padding-top: 3rem;
   align-items: center;
 }
 
@@ -298,7 +297,7 @@ button {
 
 .home__description {
   margin-bottom: var(--mb-2);
-  font-size: .8rem;
+  font-size: var(--small-font-size);
 }
 
 .home__scroll {
@@ -356,24 +355,434 @@ button {
   align-items: center;
 }
 
-/*==================== ABOUT ====================*/
+.button--small {
+  padding: .75rem 1rem;
+}
 
+.button--link {
+  padding: 0;
+  background-color: transparent;
+  color: var(--first-color);
+}
+
+.button--link:hover {
+  background-color: transparent;
+  color: var(--first-color-alt);
+}
+
+/*==================== ABOUT ====================*/
+.about__img {
+  width: 200px;
+  border-radius: .5rem;
+  justify-self: center;
+  align-self: center;
+  margin-bottom: var(--mb-1-5);
+}
+
+.about__description {
+  text-align: center;
+  margin-bottom: var(--mb-2-5);
+  font-size: var(--small-font-size);
+}
+
+.about__info {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: var(--mb-2-5);
+  font-size: var(--small-font-size);
+}
+
+.about__info-title {
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-semi-bold);
+  color: var(--title-color);
+}
+
+.about__info-name {
+  font-size: var(--smaller-font-size);
+}
+
+.about__info-title,
+.about__info-name {
+  display: block;
+  text-align: center;
+}
+
+.about__buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.title__about {
+  margin-top: var(--mb-3);
+}
 
 /*==================== SKILLS ====================*/
+.skills__container {
+  row-gap: 0;
+}
+
+.skills__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--mb-2-5);
+  cursor: pointer;
+}
+
+.skills__icon,
+.skills__arrow {
+  font-size: 2rem;
+  color: var(--first-color);
+}
+
+.skills__icon {
+  margin-right: var(--mb-0-75);
+}
+
+.skills__title {
+  font-size: var(--h3-font-size);
+  /* color: var(--first-color) */
+  /* color: var(--second-color-alt); */
+
+}
+
+.skills__title:hover {
+  color: var(--first-color)
+}
+
+.skills__subtitle {
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+}
+
+.skills__arrow {
+  margin-left: auto;
+  transition: .7s;
+}
+
+.skills__arrow:hover {
+  color: var(--first-color-alt);
+}
+
+.skills__list {
+  row-gap: 1.5rem;
+  padding-left: 2.7rem;
+}
+
+.skills__titles {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--mb-0-5);
+}
+
+.skills__name {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+}
+
+.skills__bar,
+.skills__percentage {
+  height: 5px;
+  border-radius: .25rem;
+}
+
+.skills__bar {
+  background-color: var(--first-color-lighter);
+}
+
+.skills__percentage {
+  display: block;
+  background-color: var(--first-color);
+}
+
+  /*======= SKILLS 1 =========*/
+.skills__html {
+  width: 90%;
+}
+
+.skills__css {
+  width: 60%;
+}
+
+.skills__js {
+  width: 78%;
+}
+
+.skills__react {
+  width: 80%;
+}
+
+  /*======= SKILLS 2 =========*/
+.skills__python {
+  width: 0%;
+}
+
+.skills__ts {
+  width: 10%;
+}
+
+.skills__node {
+  width: 0%;
+}
+
+.skills__docker {
+  width: 0%;
+}
+
+.skills__sql {
+  width: 0%;
+}
+
+.skills__mongo {
+  width: 0%;
+}
+
+  /*======= SKILLS 3 =========*/
+.skills__illustrator {
+  width: 70%;
+}
+
+.skills__photoshop {
+  width: 80%;
+}
+
+.skills__xd {
+  width: 58%;
+}
+
+.skills__press {
+  width: 70%;
+}
+
+.skills__close .skills__list {
+  height: 0;
+  overflow: hidden;
+}
+
+.skills__open .skills__list {
+  height: max-content;
+  margin-bottom: var(--mb-2-5);
+}
+
+.skills__open .skills__arrow {
+  transform: rotate(-180deg);
+}
 
 
 /*==================== QUALIFICATION ====================*/
+.qualification__tabs {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: var(--mb-2);
+}
 
+.qualification__button {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  cursor: pointer;
+}
+
+.qualification__button:hover{
+  color: var(--first-color);
+}
+
+.qualification__icon {
+  width: 20px;
+  margin-right: var(--mb-0-25);
+}
+
+.qualification__data {
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  column-gap: 1.5rem;
+}
+
+.qualification__title {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+}
+
+.qualification__subtitle {
+  display: inline-block;
+  font-size: var(--small-font-size);
+  margin-bottom: var(--mb-1);
+}
+
+.qualification__calendar {
+  font-size: var(--smaller-font-size);
+  color: var(--text-color-light);
+  display: inline-flex;
+  align-items: center;
+}
+
+.qualification__rounder {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background-color: var(--first-color);
+  border-radius: 50%;
+}
+
+.qualification__line {
+  display: block;
+  width: 1px;
+  height: 100%;
+  background-color: var(--first-color);
+  transform: translate(6px, -7px);
+}
+
+.qualification [data-content] {
+  display: none;
+}
+
+.qualification__active[data-content] {
+  display: block;
+}
+
+.qualification__button--active {
+  color: var(--first-color);
+}
 
 /*==================== SERVICES ====================*/
+.services__container {
+  gap: 1.5rem;
+  grid-template-columns: repeat(2, 1fr);
+}
 
+.services__content {
+  position: relative;
+  background-color: var(--container-color);
+  padding: 3.5rem .5rem 1.25rem 1.5rem;
+  border-radius: .25rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .15);
+  transition: .2s;
+}
+
+.services__content:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, .25);
+}
+
+.services__icon {
+  display: block;
+  font-size: 1.5rem;
+  color: var(--first-color);
+  margin-bottom: var(--mb-1);
+  width: 27px;
+}
+
+.services__title {
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-1);
+  font-weight: var(--font-medium);
+}
+
+.services__button {
+  cursor: pointer;
+  font-size: var(--small-font-size);
+}
+
+.services__button:hover .button__icon{
+  transform: translateX(.25rem);
+}
+
+.services__modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  z-index: var(--z-modal);
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+}
+
+.services__modal-content {
+  position: relative;
+  background-color: var(--container-color);
+  padding: 1.5rem;
+  border-radius: .5rem;
+}
+
+.services__modal-services {
+  row-gap: 1rem;
+}
+
+.services__modal-service {
+  display: flex;
+}
+
+.services__modal-title {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  margin-bottom: var(--mb-1-5);
+}
+
+.services__modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  color: var(--first-color);
+  cursor: pointer;
+}
+
+.services__modal-icon {
+  width: 20px;
+  color: var(--first-color);
+  margin-right: var(--mb-0-25);
+}
 
 /* Active Modal */
-
+.active-modal {
+  opacity: 1;
+  visibility: visible;
+}
 
 /*==================== PORTFOLIO ====================*/
+.portfolio__container {
+  overflow: initial;
+}
 
+.portfolio__content {
+  padding: 0 1.5rem;
+  align-items: center;
+  justify-content: center;
+}
 
+.portfolio__img {
+  width: 265px;
+  border-radius: .5rem;
+  justify-content: center;
+}
+
+.portfolio__title {
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-0-5);
+  /* margin-top: 0; */
+}
+
+.portfolio__description {
+  margin-bottom: var(--mb-0-75);
+}
+
+.portfolio__button:hover .button__icon {
+  transform: translateX(.25rem);
+}
+
+.portfolio__button {
+  margin-bottom: 1.5rem;
+}
+
+.swiper-container {
+	width: 100%;
+	height: 100%;
+}
 /*==================== PROJECT IN MIND ====================*/
 
 

@@ -5,6 +5,8 @@ import { FiChevronDown } from "react-icons/fi";
 import { FiServer } from "react-icons/fi";
 import { HiOutlineColorSwatch } from "react-icons/hi";
 
+import '../css/index.css'
+
 export default function Skills() {
   const [skillsOne, setSkillsOne] = useState(false);
   const [skillsTwo, setSkillsTwo] = useState(false);

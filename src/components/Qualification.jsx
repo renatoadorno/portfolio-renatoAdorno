@@ -4,6 +4,8 @@ import { AcademicCapIcon } from '@heroicons/react/outline'
 import { BriefcaseIcon } from '@heroicons/react/outline'
 import { CalendarIcon } from '@heroicons/react/outline'
 
+import '../css/index.css'
+
 export default function Qualification() {
   const [showEducation, setShowEducation] = useState(true);
   const [showWork, setShowWork] = useState(false);

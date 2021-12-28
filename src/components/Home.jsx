@@ -1,5 +1,5 @@
 import React from 'react'
-import { ReactComponent as ImgPerfil } from '../img/blog.svg'
+import Perfil1 from '../img/perfil1.png'
 
 import { FiGithub } from "react-icons/fi";
 import { FiLinkedin } from "react-icons/fi";
@@ -7,7 +7,7 @@ import { BsMouse } from "react-icons/bs";
 import { BsArrowDownShort } from "react-icons/bs";
 import { HiOutlinePaperAirplane } from "react-icons/hi";
 
-import '../App.css';
+import '../css/index.css'
 
 export default function Home() {
   return (
@@ -34,7 +34,7 @@ export default function Home() {
           </div>
 
           <div className="home__img">
-            <ImgPerfil className="home__blob" href="../img/myImg.jpg" />
+            <img src={ Perfil1 } alt="img perfil" className="home__blob" />
           </div>
 
           <div className="home__data">

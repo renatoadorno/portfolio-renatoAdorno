@@ -2,7 +2,8 @@ import React from 'react'
 import { FiDownload } from "react-icons/fi";
 
 import Perfil2 from '../img/perfil2.jpg'
-import '../App.css';
+
+import '../css/index.css'
 
 export default function About() {
   return (
