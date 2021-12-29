@@ -8,7 +8,6 @@ import { BsArrowDownShort } from "react-icons/bs";
 // import { HiOutlinePaperAirplane } from "react-icons/hi";
 import { BiSend } from "react-icons/bi";
 
-import '../css/index.css'
 
 export default function Home() {
   return (

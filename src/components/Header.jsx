@@ -9,7 +9,6 @@ import { PaperAirplaneIcon } from '@heroicons/react/outline'
 import { ViewGridIcon } from '@heroicons/react/outline'
 import { XIcon } from '@heroicons/react/outline'
 
-import '../css/index.css'
 
 //definir um stado com valor buleano qua ao apertar adiciona a classe show-menu linha 25
 

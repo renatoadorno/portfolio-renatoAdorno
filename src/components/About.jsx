@@ -3,8 +3,6 @@ import { FiDownload } from "react-icons/fi";
 
 import Perfil2 from '../img/perfil2.jpg'
 
-import '../css/index.css'
-
 export default function About() {
   return (
     <section className="about section" id="about">

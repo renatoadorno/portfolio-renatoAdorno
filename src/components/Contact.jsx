@@ -4,8 +4,6 @@ import { BsWhatsapp } from "react-icons/bs";
 import { HiOutlineMail } from "react-icons/hi";
 import { BiSend } from "react-icons/bi";
 
-import '../css/index.css'
-
 export default function Contact() {
   return (
     <section className="contact section" id="contact">

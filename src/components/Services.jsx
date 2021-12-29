@@ -5,8 +5,6 @@ import { CheckCircleIcon } from '@heroicons/react/outline'
 import { CodeIcon } from '@heroicons/react/outline'
 import { TemplateIcon } from '@heroicons/react/outline'
 
-import '../css/index.css'
-
 export default function Services() {
   const [servicesOne, setServicesOne] = useState(false);
   const [servicesTwo, setServicesTwo] = useState(false);

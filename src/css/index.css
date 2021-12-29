@@ -9,8 +9,7 @@
 
   /*==========Hsl Colors===========*/
   --first-color: hsl(var(--hue-color), 69%, 50%);
-  --second-color: hsl(var(--hue-color), 1%, 26%);
-  --first-color-second: hsl(var(--hue-color), 69%, 61%);
+  --first-color-second: hsl(var(--hue-color), 69%, 44%);
   --first-color-alt: hsl(var(--hue-color), 57%, 53%);
   --second-color-alt: hsl(var(--hue-color), 23%, 38%);
   --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
@@ -851,6 +850,69 @@ textarea {
 }
 
 /*==================== FOOTER ====================*/
+.footer {
+  padding-top: 2rem;
+}
+
+.footer__container {
+  row-gap: 3.5rem;
+}
+
+.footer__bg {
+  background-color: var(--first-color-second);
+  padding: 2rem 0 3rem;
+}
+
+.footer__title {
+  font-size: var(--h1-font-size);
+  margin-bottom: var(--mb-0-25);
+}
+
+.footer__subtitle {
+  font-size: var(--small-font-size);
+  margin-bottom: var(--mb-2)
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+  margin-top: var(--mb-3);
+}
+
+.footer__link:hover {
+  color: var(--first-color-lighter);
+}
+
+.footer__social {
+  font-size: 1.25rem;
+  margin-right: var(--mb-1-5);
+}
+
+.footer__social:hover {
+  color: var(--first-color-lighter);
+}
+
+.footer__socials {
+  margin-top: var(--mb-3);
+}
+
+.footer__copy {
+  font-size: var(--smaller-font-size);
+  text-align: center;
+  margin-top: var(--mb-1);
+  margin-bottom: 2.3rem;
+  font-family: var(--body-font);
+}
+
+.footer__copy,
+.footer__title,
+.footer__subtitle,
+.footer__link,
+.footer__social {
+  color: #FFF;
+}
+
 
 
 /*========== SCROLL UP ==========*/

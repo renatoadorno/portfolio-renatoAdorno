@@ -6,8 +6,6 @@ import "./slider.css"
 import ImgPortfolio from '../../img/ex1.jpg'
 
 import { BiRightArrowAlt } from "react-icons/bi";
-import ChevronLeft from "@material-ui/icons/ChevronLeft";
-import NavigateNext from "@material-ui/icons/NavigateNext";
 
 export default function Slider() {
   const [currentSlide, setCurrentSlide] = useState(0)

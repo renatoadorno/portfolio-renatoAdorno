@@ -7,7 +7,7 @@ import Qualification from './components/Qualification';
 import Services from './components/Services';
 import Portfolio from './components/portfolio/Portfolio';
 import Contact from './components/Contact';
-import './css/index.css';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -22,6 +22,7 @@ function App() {
         <Portfolio />
         <Contact />
       </main>
+      <Footer />
     </>
   );
 }
