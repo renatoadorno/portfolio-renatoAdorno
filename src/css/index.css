@@ -219,10 +219,14 @@ textarea {
   font-size: var(--small-font-size);
   color: var(--title-color);
   font-weight: var(--font-medium);
+  padding: .5rem;
+  border-radius: .5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .15);
 }
 
 .nav__link:hover {
-  color: var(--first-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, .25);
+  color: var(--first-color-alt);
 }
 
 .nav__icon {
@@ -231,10 +235,12 @@ textarea {
 
 .nav__close {
   position: absolute;
-  right: 1.3rem;
+  right: 2rem;
   bottom: .5rem;
+  width: 25px;
   cursor: pointer;
   color: var(--first-color);
+  margin-bottom: 1rem;
 }
 
 .nav__close:hover {
@@ -246,11 +252,12 @@ textarea {
   bottom: 0;
 }
 
-/* Active link */
-
-
 /* Change background header */
 
+.header {
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, .15);
+  border-radius: 1.5rem 1.5rem 0 0;
+}
 
 /*==================== HOME ====================*/
 .home__container {
@@ -852,6 +859,7 @@ textarea {
 /*==================== FOOTER ====================*/
 .footer {
   padding-top: 2rem;
+  margin-bottom: -30px;
 }
 
 .footer__container {
@@ -901,7 +909,7 @@ textarea {
   font-size: var(--smaller-font-size);
   text-align: center;
   margin-top: var(--mb-1);
-  margin-bottom: 2.3rem;
+  margin-bottom: var(--mb-0-75);
   font-family: var(--body-font);
 }
 
