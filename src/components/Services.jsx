@@ -96,7 +96,7 @@ export default function Services() {
           )}
         </div>
 
-        {/* ================SERVICES 2==================== */}
+        {/* ================SERVICES 1==================== */}
         <div className="services__content">
           <div>
             <CodeIcon className="services__icon" />
@@ -104,26 +104,26 @@ export default function Services() {
           </div>
 
           <span
-            onClick={ modalTwo }
+            onClick={ modalOne }
             className="button button--flex button--small button--link services__button"
           >
             Ver mais
             <BiRightArrowAlt className="button__icon" />
           </span>
 
-          {servicesTwo ? (
+          {servicesOne ? (
             <div className="services__modal active-modal">
               <div className="services__modal-content">
                 <h4 className="services__modal-title">Frontend <br/> Developer</h4>
                 <RiCloseLine
-                  onClick={ modalTwo }
-                  className="services__modal-close"
+                  onClick={ modalOne }
+                  className="services__modal-close" 
                 />
 
                 <ul className="services__modal-services grid">
                   <li className="services__modal-service">
                     <CheckCircleIcon className="services__modal-icon" />
-                    <p>nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn</p>
+                    <p>Desenvolvimento da interface de usuário</p>
                   </li>
                   <li className="services__modal-service">
                     <CheckCircleIcon className="services__modal-icon" />
@@ -143,7 +143,7 @@ export default function Services() {
               <div className="services__modal-content">
                 <h4 className="services__modal-title">Frontend <br/> Developer</h4>
                 <RiCloseLine
-                  onClick={ modalTwo }
+                  onClick={ modalOne }
                   className="services__modal-close"
                 />
 

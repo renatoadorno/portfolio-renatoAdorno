@@ -20,6 +20,8 @@
   --body-color: hsl(var(--hue-color), 60%, 99%);
   --swiper-theme-color: hsl(var(--hue-color), 69%, 61%);
   --container-color: #FFF;
+  --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+  --scroll-bar-color: hsl(var(--hue-color), 15%, 90%);
 
   /*==========Font e Tipografia===========*/
   --body-font: 'Poppins', sans-serif;
@@ -70,6 +72,21 @@
 /*======================= Variaveis Dark theme ===============================*/
 
 /*======================= Button Dark/Light ==================================*/
+.nav__btns {
+  display: flex;
+  align-items: center;
+}
+
+.change-theme {
+  font-size: 1.25rem;
+  color: var(--title-color);
+  margin-right: var(--mb-1);
+  cursor: pointer;
+}
+
+.change-theme:hover {
+  color: var(--first-color);
+}
 
 /*======================= BASE ===============================================*/
 
@@ -185,6 +202,8 @@ textarea {
 }
 
 .nav__toggle {
+  display: flex;
+  align-items: center;
   font-size: 1.1rem;
   cursor: pointer;
 }
@@ -233,6 +252,10 @@ textarea {
   width: 1.2rem;
 }
 
+.nav__icon--menu {
+  width: 1.3rem;
+}
+
 .nav__close {
   position: absolute;
   right: 2rem;
@@ -266,7 +289,7 @@ textarea {
 
 .home__content {
   grid-template-columns: .5fr 3fr;
-  padding-top: 3rem;
+  padding-top: 2rem;
   align-items: center;
 }
 
@@ -930,11 +953,76 @@ textarea {
 
 
 /*========== SCROLL BAR ==========*/
+::-webkit-scrollbar {
+  width: .60rem;
+  background-color: var(--scroll-bar-color);
+  border-radius: .5rem;
+}
 
+::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-thumb-color);
+  border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--text-color-light);
+}
 
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
+@media screen and (max-width: 350px) {
+  .container {
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
+  }
 
+  .nav__menu {
+    padding: 2rem 1rem 4rem;
+  }
+
+  .nav__list {
+    grid-template-columns: repeat(3, 1fr);
+    gap:1.2rem
+  }
+
+  .nav__link {
+    padding: 0px;
+    font-size: var(--smaller-font-size);
+  }
+
+  .home__content {
+    grid-template-columns: .25fr 3fr;
+  }
+
+  .home__blob {
+    width: 180px;
+  }
+
+  .skills__title {
+    font-size: var(--normal-font-size);
+  }
+
+  .qualification__data {
+    gap: .5rem;
+  }
+
+  .services__container {
+    grid-template-columns: max-content;
+    justify-content: center;
+  }
+
+  .services__content {
+    padding-right: 3.5rem;
+  }
+
+  .services__modal-content {
+    content: '';
+  }
+
+  .services__modal {
+    padding: 0 .5rem;
+  }
+}
 
 /* For medium devices */
 

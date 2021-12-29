@@ -8,6 +8,7 @@ import { PhotographIcon } from '@heroicons/react/outline'
 import { PaperAirplaneIcon } from '@heroicons/react/outline'
 import { ViewGridIcon } from '@heroicons/react/outline'
 import { XIcon } from '@heroicons/react/outline'
+// import { MoonIcon } from '@heroicons/react/outline'
 
 
 //definir um stado com valor buleano qua ao apertar adiciona a classe show-menu linha 25
@@ -111,13 +112,15 @@ export default function Header() {
         )}
 
         <div className="nav__btns">
-          <button 
+          {/* ==========Theme Change============ */}
+          {/* <MoonIcon className="change-theme nav__icon"/> */}
+          <div
             className="nav__toggle"
             id="nav-toggle"
             onClick={ funcShowMenu }
           >
-            <ViewGridIcon className="nav__icon"/>
-          </button>
+            <ViewGridIcon className="nav__icon--menu"/>
+          </div>
         </div>
       </nav>
     </header>

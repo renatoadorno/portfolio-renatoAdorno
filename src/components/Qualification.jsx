@@ -81,7 +81,7 @@ export default function Qualification() {
 
               {/* ========== QUALIFICATION 1 =========== */}
               <div className="qualification__data">
-                <div>
+                <div className='quali'>
                   <h3 className="qualification__title">Engenharia da Computação</h3>
                   <span className="qualification__subtitle">Unifev - Votuporanga</span>
                   <div className="qualification__calendar">
@@ -105,8 +105,8 @@ export default function Qualification() {
                   {/* <span className="qualification__line"></span> */}
                 </div>
 
-                <div>
-                  <h3 className="qualification__title">Desenvolvimento Web</h3>
+                <div className='quali'>
+                  <h3 className="qualification__title">Web Developer</h3>
                   <span className="qualification__subtitle">Trybe</span>
                   <div className="qualification__calendar">
                     <CalendarIcon className="qualification__icon" />
@@ -127,7 +127,7 @@ export default function Qualification() {
 
               {/* ========== QUALIFICATION 1 =========== */}
               <div className="qualification__data">
-                <div>
+                <div className='quali'>
                   <h3 className="qualification__title">Atendente de telemarketing</h3>
                   <span className="qualification__subtitle">Vikstar - Votuporanga</span>
                   <div className="qualification__calendar">
@@ -149,7 +149,7 @@ export default function Qualification() {
                   <span className="qualification__rounder"></span>
                   {/* <span className="qualification__line"></span> */}
                 </div>
-                <div>
+                <div className='quali'>
                   <h3 className="qualification__title">Web designer / Gestor de Trafego</h3>
                   <span className="qualification__subtitle">Autonomo</span>
                   <div className="qualification__calendar">
