@@ -11,7 +11,7 @@ export default function Contact() {
       <span className="section__subtitle">Entre em contato comigo</span>
 
       <div className="contact__container container grid">
-        <div>
+        <div className='contact__information--div' >
           {/* ==============Whatsapp================== */}
           <div className="contact__information">
             <BsWhatsapp className="contact__icon--whats" />

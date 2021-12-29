@@ -8,9 +8,11 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer__bg">
         <div className="footer__container container grid">
-          <div>
-            <h1 className="footer__title">Renato</h1>
-            <span className="footer__subtitle">Frontend developer</span>
+          <div className="footer__content grid">
+            <div>
+              <h1 className="footer__title">Renato</h1>
+              <span className="footer__subtitle">Frontend developer</span>
+            </div>
 
             <ul className="footer__links">
               <li>

@@ -47,7 +47,9 @@ export default function Slider() {
         <div ref={ sliderRef } className="keen-slider">
           {/* ==============PORTFOLIO 1=============== */}
           <div className="keen-slider__slide number-slide1  portfolio__content grid">
-            <img src={ ImgPortfolio } alt="dsdfsd" className="portfolio__img"/>
+            <div className="portfolio__content--img">
+              <img src={ ImgPortfolio } alt="img portfolio" className="portfolio__img"/>
+            </div>
 
             <div className="portfolio__data">
               <h3 className="portfolio__title">Modern Web Site</h3>
@@ -63,7 +65,9 @@ export default function Slider() {
 
           {/* ==============PORTFOLIO 2=============== */}
           <div className="keen-slider__slide number-slide2  portfolio__content grid">
-            <img src={ ImgPortfolio } alt="dsdfsd" className="portfolio__img"/>
+            <div className="portfolio__content">
+              <img src={ ImgPortfolio } alt="img portfolio" className="portfolio__img"/>
+            </div>
 
             <div className="portfolio__data">
               <h3 className="portfolio__title">App Financeiro</h3>

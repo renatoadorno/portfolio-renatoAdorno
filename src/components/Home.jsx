@@ -40,7 +40,7 @@ export default function Home() {
           <div className="home__data">
             <h1 className="home__title">Olá, Eu sou o Renato</h1>
             <h3 className="home__subtitle">Frontend Developer</h3>
-            <p className="home__description">Nada por enquanto</p>
+            <p className="home__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
             <a href="#contact" className="button button--flex">
               Entre em contato <BiSend className="button__icon"/>
             </a>
