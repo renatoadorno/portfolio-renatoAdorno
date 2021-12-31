@@ -96,7 +96,7 @@ export default function Services() {
           )}
         </div>
 
-        {/* ================SERVICES 1==================== */}
+        {/* ================SERVICES 2==================== */}
         <div className="services__content">
           <div>
             <CodeIcon className="services__icon" />
@@ -104,19 +104,19 @@ export default function Services() {
           </div>
 
           <span
-            onClick={ modalOne }
+            onClick={ modalTwo }
             className="button button--flex button--small button--link services__button"
           >
             Ver mais
             <BiRightArrowAlt className="button__icon" />
           </span>
 
-          {servicesOne ? (
+          {servicesTwo ? (
             <div className="services__modal active-modal">
               <div className="services__modal-content">
                 <h4 className="services__modal-title">Frontend <br/> Developer</h4>
                 <RiCloseLine
-                  onClick={ modalOne }
+                  onClick={ modalTwo }
                   className="services__modal-close" 
                 />
 
@@ -143,7 +143,7 @@ export default function Services() {
               <div className="services__modal-content">
                 <h4 className="services__modal-title">Frontend <br/> Developer</h4>
                 <RiCloseLine
-                  onClick={ modalOne }
+                  onClick={ modalTwo }
                   className="services__modal-close"
                 />
 

@@ -33,17 +33,23 @@ export default function Header() {
 
         { showMenu ? (
           <div className="nav__menu show-menu" id="nav-menu">
+
             <ul className="nav__list grid">
-              <li className="nav__item">
-                <a href="#home" className="nav__link" onClick={ funcCloseMenu }>
-                  <HomeIcon className="nav__icon" /> Home
-                </a>
-              </li>
+
+              <div className="nav__item">
+                <li>
+                  <a href="#home" className="nav__link" onClick={ funcCloseMenu }>
+                    <HomeIcon className="nav__icon" /> Home
+                  </a>
+                </li>
+              </div>
+
               <li className="nav__item">
                 <a href="#about" className="nav__link" onClick={ funcCloseMenu }>
                   <UserIcon className="nav__icon" /> About
                 </a>
               </li>
+
               <li className="nav__item">
                 <a href="#skills" className="nav__link" onClick={ funcCloseMenu }>
                   <DocumentTextIcon className="nav__icon" /> Skills
