@@ -65,7 +65,7 @@ export default function Slider() {
 
           {/* ==============PORTFOLIO 2=============== */}
           <div className="keen-slider__slide number-slide2  portfolio__content grid">
-            <div className="portfolio__content">
+            <div className="portfolio__content--img">
               <img src={ ImgPortfolio } alt="img portfolio" className="portfolio__img"/>
             </div>
 

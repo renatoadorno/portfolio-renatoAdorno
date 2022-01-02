@@ -1,10 +1,28 @@
-import React from 'react'
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 import { BsWhatsapp } from "react-icons/bs";
 import { HiOutlineMail } from "react-icons/hi";
 import { BiSend } from "react-icons/bi";
 
 export default function Contact() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_portfolio',
+      'template_portfolio',
+      form.current,
+      'user_ccDWTV784RRR8cRleOTo3'
+    )
+      .then((result) => {
+        alert('Mensagen enviada com sucesso');
+      }, (error) => {
+        alert(error.message);
+      });
+  };
+
   return (
     <section className="contact section" id="contact">
       <h2 className="section__title">Contato</h2>
@@ -18,7 +36,7 @@ export default function Contact() {
 
             <div className="contact__text">
               <h3 className="contact__title">WhatsApp</h3>
-              <span className="contact__subtitle">67 99605-9592</span>
+              <span className="contact__subtitle">67 99205-9592</span>
             </div>
           </div>
 
@@ -33,32 +51,37 @@ export default function Contact() {
           </div>
         </div>
 
-        <form action="" className="contact__form grid">
+        <form
+          action=""
+          className="contact__form grid"
+          ref={form}
+          onSubmit={sendEmail}
+        >
           <div className="contact__inputs grid">
             <div className="contact__content">
               <label htmlFor="" className="contact__label">Nome</label>
-              <input type="text" className="contact__input" />
+              <input type="text" name="name" className="contact__input" />
             </div>
             <div className="contact__content">
               <label htmlFor="" className="contact__label">Email</label>
-              <input type="email" className="contact__input" />
+              <input type="email" name="email" className="contact__input" />
             </div>
           </div>
 
           <div className="contact__content">
             <label htmlFor="" className="contact__label">Projeto</label>
-            <input type="text" className="contact__input" />
+            <input type="text" name="project" className="contact__input" />
           </div>
           <div className="contact__content">
             <label htmlFor="" className="contact__label">Mensagem</label>
-            <textarea name="" id="" cols="0" rows="7" className="contact__input"></textarea>
+            <textarea name="message" id="" cols="0" rows="7" className="contact__input"></textarea>
           </div>
 
           <div>
-            <a href="" className="button button--flex">
+            <button type="submit" value="Send" className="button button--flex">
               Enviar Mensagem
               <BiSend className="button__icon" />
-            </a>
+            </button>
           </div>
         </form>
       </div>

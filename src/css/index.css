@@ -489,7 +489,7 @@ textarea {
 }
 
 .skills__arrow {
-  margin-left: 2rem;
+  margin-left: auto;
   transition: .7s;
 }
 
@@ -1037,6 +1037,10 @@ textarea {
   .services__modal {
     padding: 0 .5rem;
   }
+
+  .footer__copy {
+    margin-top: 3rem;
+  }
 }
 
 
@@ -1099,14 +1103,25 @@ textarea {
   .services__modal {
     padding: 0 .5rem;
   }
+
+  .footer__copy {
+    margin-top: 3rem;
+  }
 }
 
 
 /* For medium devices */
+@media screen and (min-width: 420px) and (max-width: 450px) {
+  .container {
+    margin-left: 12%;
+    margin-right: 12%;
+  }
+}
+
 @media screen and (min-width: 450px) {
   .container {
-    margin-left: var(--mb-2-5);
-    margin-right: var(--mb-2-5);
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
 
   .nav__icon {
@@ -1213,8 +1228,8 @@ textarea {
 
 @media screen and (min-width: 461px) {
   .container {
-    margin-left: var(--mb-1-5);
-    margin-right: var(--mb-1-5);
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
   
   .home__content {
@@ -1276,7 +1291,9 @@ textarea {
     margin-right: 0;
   }
 
-
+  .footer__bg {
+    margin-top: 5rem;
+  }
 }
 
 @media screen and (min-width: 565px) {
@@ -1300,8 +1317,8 @@ textarea {
 
 @media screen and (min-width: 615px) {
   .container {
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
 
   .footer__socials {
@@ -1309,7 +1326,25 @@ textarea {
   }
 }
 
+@media screen and (min-width: 645px) {
+  .container {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .container {
+    margin-left: 13%;
+    margin-right: 13%;
+  }
+}
+
 @media screen and (min-width: 768px)  {
+  .container {
+    margin-left: 8%;
+    margin-right: 8%;
+  }
 
   body {
     margin: 0;
@@ -1589,6 +1624,22 @@ textarea {
 
   .services__container {
     grid-template-columns: repeat(2, 250px);
+  }
+
+  .portfolio__content {
+    column-gap: 1rem;
+  }
+
+  .contact__form {
+    width: 460px;
+  }
+
+  .contact__inputs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer__bg {
+    margin-top: 5rem;
   }
 }
 
