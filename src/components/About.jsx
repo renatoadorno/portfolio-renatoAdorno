@@ -14,24 +14,24 @@ export default function About() {
 
         <div className="about__data">
           <p className="about__description">
-            Lorem Ipsum is simply dummy text of the printing and typesetting 
-            industry. Lorem Ipsum has been the industry's standard dummy text 
-            ever since the 1500s
+          Estou a mais de um ano me preparando para trabalhar na área de desenvolvimento web, 
+          adquirindo conhecimentos em programação funcional, OOP, e praticando com projetos que fiz 
+          durante meu período de estudo na Trybe.
           </p>
 
           <div className="about__info">
             <div>
-                <span className="about__info-title">+05 </span>
+                <span className="about__info-title">+12 </span>
                 <span className="about__info-name">Meses <br/> de estudo</span>
               </div>
 
               <div>
-                <span className="about__info-title">+10 </span>
+                <span className="about__info-title">+15 </span>
                 <span className="about__info-name">Projetos <br/> completos</span>
               </div>
 
               <div>
-                <span className="about__info-title">+170 </span>
+                <span className="about__info-title">+350 </span>
                 <span className="about__info-name">Commits <br/> feitos no GitHub</span>
               </div>
 
@@ -42,7 +42,7 @@ export default function About() {
             </div>
 
             <div className="about__buttons">
-              <a download="" href="../doc/Curriculo_RenatoAdorno.pdf" className="button button--flex">
+              <a download="" href="../doc/0-RENATOADORNO-CV-WEBSITE.pdf" className="button button--flex">
                 Download CV <FiDownload className="button__icon" />
               </a>
             </div>
