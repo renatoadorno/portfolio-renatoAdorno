@@ -55,11 +55,11 @@ export default function Header() {
                   <DocumentTextIcon className="nav__icon" /> Skills
                 </a>
               </li>
-              <li className="nav__item">
+              {/* <li className="nav__item">
                 <a href="#services" className="nav__link" onClick={ funcCloseMenu }>
                   <BriefcaseIcon className="nav__icon"/> Services
                 </a>
-              </li>
+              </li> */}
               <li className="nav__item">
                 <a href="#portfolio" className="nav__link" onClick={ funcCloseMenu }>
                   <PhotographIcon className="nav__icon" /> Portfolio
@@ -95,11 +95,11 @@ export default function Header() {
                   <DocumentTextIcon className="nav__icon" /> Skills
                 </a>
               </li>
-              <li className="nav__item">
+              {/* <li className="nav__item">
                 <a href="#services" className="nav__link">
                   <BriefcaseIcon className="nav__icon"/> Serviços
                 </a>
-              </li>
+              </li> */}
               <li className="nav__item">
                 <a href="#portfolio" className="nav__link">
                   <PhotographIcon className="nav__icon" /> Portfolio
