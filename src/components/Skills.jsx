@@ -50,11 +50,11 @@ export default function Skills() {
         {skillsOne ? (
           <div className="skills__content skills__open">
             <div className="skills__header">
-              <BsBraces className="skills__icon" />
+              <HiOutlineColorSwatch className="skills__icon" />
 
               <div onClick={ toggleOne }>
                 <h1 className="skills__title">Frontend</h1>
-                <span className="skills__subtitle">+2 meses de experiencia</span>
+                <span className="skills__subtitle">+5 Projetos</span>
               </div>
 
               <FiChevronDown onClick={ toggleOne } className="skills__arrow" />
@@ -113,11 +113,11 @@ export default function Skills() {
         (
           <div className="skills__content skills__close">
             <div className="skills__header">
-              <BsBraces className="skills__icon" />
+              <HiOutlineColorSwatch className="skills__icon" />
 
               <div onClick={ toggleOne }>
                 <h1 className="skills__title">Frontend</h1>
-                <span className="skills__subtitle">+2 meses de experiencia</span>
+                <span className="skills__subtitle">+5 Projetos</span>
               </div>
 
               <FiChevronDown onClick={ toggleOne } className="skills__arrow" />
@@ -177,11 +177,11 @@ export default function Skills() {
         {skillsThree ? (
           <div className="skills__content skills__open">
             <div className="skills__header">
-              <HiOutlineColorSwatch className="skills__icon" />
+              <BsBraces className="skills__icon" />
 
               <div onClick={ toggleThree }>
-                <h1 className="skills__title">Web Design</h1>
-                <span className="skills__subtitle">+1 ano de experiencia</span>
+                <h1 className="skills__title">Backend</h1>
+                <span className="skills__subtitle">+5 Projetos</span>
               </div>
 
               <FiChevronDown onClick={ toggleThree } className="skills__arrow" />
@@ -189,47 +189,58 @@ export default function Skills() {
 
             <div className="skills__list grid">
 
-              {/* =====Adobe Illustrator===== */}
+              {/* =====Node.js===== */}
               <div className="skills__data">
                 <div className="skills__titles">
-                  <h3 className="skills__name">Adobe Illustrator</h3>
-                  <span className="skills__number">70%</span>
+                  <h3 className="skills__name">Node.js</h3>
+                  <span className="skills__number">50%</span>
                 </div>
                 <div className="skills__bar">
-                  <span className="skills__percentage skills__illustrator"></span>
+                  <span className="skills__percentage skills__node"></span>
                 </div>
               </div>
 
-              {/* =====Photoshop===== */}
+              {/* =====TypeScript===== */}
               <div className="skills__data">
                 <div className="skills__titles">
-                  <h3 className="skills__name">Adobe Photoshop</h3>
-                  <span className="skills__number">80%</span>
+                  <h3 className="skills__name">TypeScript</h3>
+                  <span className="skills__number">40%</span>
                 </div>
                 <div className="skills__bar">
-                  <span className="skills__percentage skills__photoshop"></span>
+                  <span className="skills__percentage skills__ts"></span>
                 </div>
               </div>
 
-              {/* =====Adobe XD===== */}
+              {/* =====Express===== */}
               <div className="skills__data">
                 <div className="skills__titles">
-                  <h3 className="skills__name">Adobe XD</h3>
-                  <span className="skills__number">58%</span>
+                  <h3 className="skills__name">Express</h3>
+                  <span className="skills__number">60%</span>
                 </div>
                 <div className="skills__bar">
-                  <span className="skills__percentage skills__xd"></span>
+                  <span className="skills__percentage skills__express"></span>
                 </div>
               </div>
 
-              {/* =====WordPress===== */}
+              {/* =====Docker===== */}
               <div className="skills__data">
                 <div className="skills__titles">
-                  <h3 className="skills__name">WordPress</h3>
-                  <span className="skills__number">70%</span>
+                  <h3 className="skills__name">Docker</h3>
+                  <span className="skills__number">35%</span>
                 </div>
                 <div className="skills__bar">
-                  <span className="skills__percentage skills__press"></span>
+                  <span className="skills__percentage skills__docker"></span>
+                </div>
+              </div>
+
+              {/* =====MySQL===== */}
+              <div className="skills__data">
+                <div className="skills__titles">
+                  <h3 className="skills__name">MySQL</h3>
+                  <span className="skills__number">40%</span>
+                </div>
+                <div className="skills__bar">
+                  <span className="skills__percentage skills__sql"></span>
                 </div>
               </div>
 
@@ -240,11 +251,11 @@ export default function Skills() {
         (
           <div className="skills__content skills__close">
             <div className="skills__header">
-              <HiOutlineColorSwatch className="skills__icon" />
+              <BsBraces className="skills__icon" />
 
               <div onClick={ toggleThree }>
-                <h1 className="skills__title">Web Design</h1>
-                <span className="skills__subtitle">+1 ano de experiencia</span>
+                <h1 className="skills__title">Backend</h1>
+                <span className="skills__subtitle">+5 Projetos</span>
               </div>
 
               <FiChevronDown onClick={ toggleThree } className="skills__arrow" />
@@ -252,47 +263,58 @@ export default function Skills() {
 
             <div className="skills__list grid">
 
-              {/* =====Adobe Illustrator===== */}
+              {/* =====Node.js===== */}
               <div className="skills__data">
                 <div className="skills__titles">
-                  <h3 className="skills__name">Adobe Illustrator</h3>
-                  <span className="skills__number">70%</span>
+                  <h3 className="skills__name">Node.js</h3>
+                  <span className="skills__number">50%</span>
                 </div>
                 <div className="skills__bar">
-                  <span className="skills__percentage skills__illustrator"></span>
+                  <span className="skills__percentage skills__node"></span>
                 </div>
               </div>
 
-              {/* =====Photoshop===== */}
+              {/* =====TypeScript===== */}
               <div className="skills__data">
                 <div className="skills__titles">
-                  <h3 className="skills__name">Adobe Photoshop</h3>
-                  <span className="skills__number">80%</span>
+                  <h3 className="skills__name">TypeScript</h3>
+                  <span className="skills__number">40%</span>
                 </div>
                 <div className="skills__bar">
-                  <span className="skills__percentage skills__photoshop"></span>
+                  <span className="skills__percentage skills__ts"></span>
                 </div>
               </div>
 
-              {/* =====Adobe XD===== */}
+              {/* =====Express===== */}
               <div className="skills__data">
                 <div className="skills__titles">
-                  <h3 className="skills__name">Adobe XD</h3>
-                  <span className="skills__number">58%</span>
+                  <h3 className="skills__name">Express</h3>
+                  <span className="skills__number">60%</span>
                 </div>
                 <div className="skills__bar">
-                  <span className="skills__percentage skills__xd"></span>
+                  <span className="skills__percentage skills__express"></span>
                 </div>
               </div>
 
-              {/* =====WordPress===== */}
+              {/* =====Docker===== */}
               <div className="skills__data">
                 <div className="skills__titles">
-                  <h3 className="skills__name">WordPress</h3>
-                  <span className="skills__number">70%</span>
+                  <h3 className="skills__name">Docker</h3>
+                  <span className="skills__number">35%</span>
                 </div>
                 <div className="skills__bar">
-                  <span className="skills__percentage skills__press"></span>
+                  <span className="skills__percentage skills__docker"></span>
+                </div>
+              </div>
+
+              {/* =====MySQL===== */}
+              <div className="skills__data">
+                <div className="skills__titles">
+                  <h3 className="skills__name">MySQL</h3>
+                  <span className="skills__number">40%</span>
+                </div>
+                <div className="skills__bar">
+                  <span className="skills__percentage skills__sql"></span>
                 </div>
               </div>
 

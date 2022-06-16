@@ -551,19 +551,23 @@ textarea {
 }
 
 .skills__ts {
-  width: 10%;
+  width: 40%;
 }
 
 .skills__node {
-  width: 0%;
+  width: 50%;
+}
+
+.skills__express {
+  width: 60%;
 }
 
 .skills__docker {
-  width: 0%;
+  width: 35%;
 }
 
 .skills__sql {
-  width: 0%;
+  width: 40%;
 }
 
 .skills__mongo {
