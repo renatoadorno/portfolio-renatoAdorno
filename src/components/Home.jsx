@@ -38,9 +38,9 @@ export default function Home() {
           </div>
 
           <div className="home__data">
-            <h1 className="home__title">Olá, Eu sou o Renato</h1>
-            <h3 className="home__subtitle">Frontend Developer</h3>
-            <p className="home__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+            <h1 className="home__title">Olá! Eu sou o Renato</h1>
+            <h3 className="home__subtitle">Full-Stack Developer</h3>
+            <p className="home__description">Sou curioso e gosto muito de aprender novas tecnologias, atualmente trabalho com React e Node.js.</p>
             <a href="#contact" className="button button--flex">
               Entre em contato <BiSend className="button__icon"/>
             </a>

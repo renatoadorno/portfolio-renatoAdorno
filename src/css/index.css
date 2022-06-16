@@ -5,10 +5,10 @@
   --header-height: 3rem;
 
   /*==========Colors===========*/
-  --hue-color: 80; /* Green 142 - Blue 230*/
+  --hue-color: 102; /* Green 142 - Blue 230*/
 
   /*==========Hsl Colors===========*/
-  --first-color: hsl(var(--hue-color), 69%, 50%);
+  --first-color: hsl(var(--hue-color), 63%, 60%);
   --first-color-second: hsl(var(--hue-color), 69%, 44%);
   --first-color-alt: hsl(var(--hue-color), 57%, 53%);
   --second-color-alt: hsl(var(--hue-color), 23%, 38%);
@@ -1419,8 +1419,8 @@ textarea {
     column-gap: 2rem;
   }
 
-  .home__img {
-  }
+  /* .home__img {
+  } */
 
   .home__blob {
     width: 280px;
